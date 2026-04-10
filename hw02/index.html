@@ -23,7 +23,6 @@
   .lxgw-wenkai-mono-tc-light {
     font-family: "LXGW WenKai Mono TC", monospace;
     font-weight: 300;
-    font-style: normal;
   }
 
   @font-face {
@@ -32,42 +31,40 @@
   }
 
   @font-face {
-    font-family:'110590455';
-    src: url(https://github.com/t110590455-creator/ai2026s/tree/main/hw02/Font_110590455.woff2); 
+    font-family:'Font_110590455';
+    src: url(https://github.com/t110590455-creator/ai2026s/blob/main/hw02/Font_110590455.woff2) format('woff2'); 
   }
 
   table {
       border-collapse: collapse;
-      border: 2px solid white; /* rgba(217,140,144,1) */
-      font-size:  16pt;
+      border: 2px solid white;
+      font-size: 16pt;
       margin-left: auto;
       margin-right: auto;
   }
 
-  td,
-  th {
+  td, th {
       border: 1px solid white;
       padding: 2px 8px;
   }
 
-  .flipswitch
-  {
+  .flipswitch {
       position: relative;
       background: white;
       width: 120px;
       height: 20px;
       -webkit-appearance: initial;
       border-radius: 3px;
-      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
       outline:none;
       font-size: 14px;
-      font-family: Font_110590455;
+      /* 修正 2：開關也套用你的字體 */
+      font-family: 'Font_110590455', sans-serif;
       font-weight: bold;
       cursor:pointer;
       border:1px solid #ddd;
   }
-  .flipswitch:after
-  {
+
+  .flipswitch:after {
       position:absolute;
       top:5%;
       display:block; 
@@ -81,67 +78,35 @@
       color:rgba(159,53,58,1);
       border:#888 1px solid;
       border-radius:3px;
-  }
-  .flipswitch:after
-  {
       left:2%;
       content: "未完成";
   }
-  .flipswitch:checked:after
-  {
+
+  .flipswitch:checked:after {
       left:53%;
       content: "完成";
   }
 
+  /* 修正 3：強制 body 與所有內容優先使用你的手寫字體 */
   body {
-    background-color: rgb(106, 76, 156); /* #6A4C9C */
+    background-color: rgb(106, 76, 156);
     color: rgb(106, 76, 156);
-    font-family: 'CircleFont', 'Noto Sans JP', serif;
+    font-family: 'Font_110590455', 'CircleFont', 'Noto Sans JP', serif;
   }
 
-  p{
-    font-family:'LXGW WenKai Mono TC';
+  /* 修正 4：確保 .twenty 裡面的文字也會變更 */
+  .twenty, p, span, h1 {
+    font-family: 'Font_110590455', 'CircleFont', sans-serif;
   }
 
-  .container-fluid {
-    width:  90%;
-  }
-
-  .hw12 {
-    border: 1px solid rgb(159, 53, 58);
-    margin-top: 8px;
-    margin-bottom: 8px;
-  }
-
-  .twenty {
-    border: 1px solid #f9eced;
-    color: #f9eced;
-    padding: 8px;
-    font-size: 18pt;
-  }
-
-  .twenty a {
-    color:  yellow;
-  }
-
-  .twenty a:hover {
-    color: #f9eced;
-    font-size:  16pt;
-  }
-
-  .twenty:hover {
-      box-shadow: 0 0 5px 3px #f9eced;
-      color: cyan; 
-      text-shadow: 0 0 6px #FFFFFF, 0 0 6px #000000;
-  }
-
-  .toprow {
-    margin-top: 36px;
-  }
-
-  .bottomrow {
-    margin-bottom: 36px;
-  }
+  .container-fluid { width: 90%; }
+  .hw12 { border: 1px solid rgb(159, 53, 58); margin-top: 8px; margin-bottom: 8px; }
+  .twenty { border: 1px solid #f9eced; color: #f9eced; padding: 8px; font-size: 18pt; }
+  .twenty a { color: yellow; }
+  .twenty a:hover { color: #f9eced; font-size: 16pt; }
+  .twenty:hover { box-shadow: 0 0 5px 3px #f9eced; color: cyan; text-shadow: 0 0 6px #FFFFFF, 0 0 6px #000000; }
+  .toprow { margin-top: 36px; }
+  .bottomrow { margin-bottom: 36px; }
 </style>
 </head>
 <body>
@@ -169,7 +134,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      這是第二個作業，也是需要心得報告 105 字，這邊示範作業二的心得書寫乙次。這次生成自己的手寫體，算是幫自己努力手刻的字跡，留下一個美好的回憶，在這個數位時代，相片只剩像素的集合，藉由這次的經驗，使自己書寫的內容化身成為流暢的貝茲曲線，為數位時代留下一些痕跡，為之後的作業鋪上一層伏筆
+      本次作業為手寫體生成計畫，不僅是對先前努力「刻」字的成果驗收，更是一場溫馨的回憶封存。在照片已淪為像素集合的數位時代，這次經驗讓我的筆跡轉化為優美的貝茲曲線，以向量的形式在雲端留下專屬痕跡。這份成果不僅是個人書寫風格的延伸，也為後續的專案開發埋下伏筆。
     </div>
   </div>
 
