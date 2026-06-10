@@ -52,7 +52,7 @@
             .style("opacity", 0);
 
         // 設定為自己字的檔名
-        var myImg = "114598033.png";
+        var myImg = "110590455.png";
         
         d3.csv("results.csv").then(function(data) {
 
@@ -76,7 +76,6 @@
             var y = d3.scaleLinear()
                 .domain([0, 0.7]) // lpips
                 .range([ height, 0]);
-
 
             // 加入Y軸以及標籤
             svg.append("g")
@@ -113,9 +112,12 @@
                 .style("fill", "rgba(0,0,0,0)")  // 設定為透明填色，確保能觸發滑鼠事件
                 .style("stroke", function(d) {
                     // 設定外框顏色規則：符合條件為紅框，不符合為綠框
-                    return d.Student === myImg ? "#ff0000" : "#187C19"; 
+                    return d.Student === myImg ? "red" : "#187C19"; 
                 })
-                .style("stroke-width", "2px"); // 設定外框粗度
+                .style("stroke-width", function(d) {
+                    // 讓紅框加粗，綠框維持正常，視覺上更明顯
+                    return d.Student === myImg ? "3px" : "1px"; 
+                });
 
             // 加入圖片
             node.append("image")
