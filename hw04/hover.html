@@ -77,7 +77,6 @@
                 .domain([0, 0.7]) // lpips
                 .range([ height, 0]);
 
-
             // 加入Y軸以及標籤
             svg.append("g")
                 .call(d3.axisLeft(y))
@@ -112,8 +111,12 @@
                 .attr("y", -rectSize / 2) // 往上平移一半以置中
                 .style("fill", "rgba(0,0,0,0)")  // 設定為透明填色，確保能觸發滑鼠事件
                 .style("stroke", function(d) {
-                    // 設定外框顏色規則：符合條件為紅框，不符合為綠框
-                    return d.Student === myImg ? "#ff0000" : "#187C19"; 
+                    // 加入 .trim() 確保沒有隱藏空白，並判斷是否為自己的檔案
+                    if (d.Student && d.Student.trim() === myImg) {
+                        return "#ff0000"; // 紅框
+                    } else {
+                        return "#187C19"; // 綠框
+                    }
                 })
                 .style("stroke-width", "2px"); // 設定外框粗度
 
@@ -151,6 +154,11 @@
                         .duration(500)
                         .style("opacity", 0);
                 });
+            
+            // 將自己的圖層移到最上層，避免被座標相同的綠框覆蓋
+            node.filter(function(d) { 
+                return d.Student && d.Student.trim() === myImg; 
+            }).raise();
             
         });
 
