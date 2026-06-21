@@ -153,7 +153,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      這次作業是我第一次深入體驗「文生影片」的完整實作。我們使用了目前個人端公認功能最頂級、擴充性最強的 ComfyUI，並搭配 Civitai 豐富的開源模型資源。過去總覺得 AI 生成像個黑盒子，但透過 ComfyUI 獨特的節點式連接，我們可以像組裝樂高一樣，自由串聯提示詞、控制網和影片渲染模塊，一步步搭建出專屬的工作流。
+      這次作業是我第一次深入體驗文生影片的完整實作。我們使用了目前個人端公認功能最頂級、擴充性最強的 ComfyUI，並搭配 Civitai 豐富的開源模型資源。過去總覺得 AI 生成像個黑盒子，但透過 ComfyUI 獨特的節點式連接，我們可以像組裝樂高一樣，自由串聯提示詞、控制網和影片渲染模塊，一步步搭建出專屬的工作流。
 
 整個實作過程充滿了探索的樂趣與成就感。每一次調整節點參數，都能直接看到動態影像的質變，這讓我真正搞懂了 AI 模型在處理幀與幀之間連貫性的運作邏輯。最後看到影片成功生成的瞬間，真的非常驚豔！這段經驗不僅讓我掌握了新工具，也深刻體會到開源社群的強大，以及未來動態影像創作的無限可能。
     </div>
@@ -226,57 +226,57 @@
       <figcaption>生成完整角色動畫 - 1</figcaption>
       <img src="3.gif" width="100%"><br>
       <td> 使用提示詞:
-          "0" :"spring day, floral skirt, wind, hair accessories, smile",
-          "10" :"spring day, floral skirt, wind, hair accessories, smile",
-          "20" :"spring day, floral skirt, wind, hair accessories, smile",
-          "30" :"summer day, short-sleeved dress, straw hat",
-          "40" :"summer day, short-sleeved dress, straw hat",
-          "50" :"summer day, short-sleeved dress, straw hat",
-          "60" :"fall day, sweater, slim jeans, wind, fallen leaves",
-          "70" :"fall day, sweater, slim jeans, wind, fallen leaves",
-          "80" :"fall day, sweater, slim jeans, wind, fallen leaves",
-          "90" :"winter, down jacket, woolen hat, ear protection gloves, snowflakes",
-          "100" :"winter, down jacket, woolen hat, ear protection gloves, snowflakes",
-          "110" :"winter, down jacket, woolen hat, ear protection gloves, snowflakes"
+          "0" :"spring day, hoodie, wind, hair accessories, gloomy sky, neutral expression",
+"10" :"spring day, hoodie, wind, hair accessories, gloomy sky, neutral expression",
+"20" :"spring day, hoodie, wind, hair accessories, gloomy sky, neutral expression",
+"30" :"summer day, hoodie, overcast sky, serious face",
+"40" :"summer day, hoodie, overcast sky, serious face",
+"50" :"summer day, hoodie, overcast sky, serious face",
+"60" :"fall day, hoodie, slim jeans, wind, fallen leaves, dim lighting, no smile",
+"70" :"fall day, hoodie, slim jeans, wind, fallen leaves, dim lighting, no smile",
+"80" :"fall day, hoodie, slim jeans, wind, fallen leaves, dim lighting, no smile",
+"90" :"winter, hoodie, woolen hat, ear protection gloves, snowflakes, dark atmosphere, solemn expression",
+"100" :"winter, hoodie, woolen hat, ear protection gloves, snowflakes, dark atmosphere, solemn expression",
+"110" :"winter, hoodie, woolen hat, ear protection gloves, snowflakes, dark atmosphere, solemn expression"
       </td>
     </div>
     <div class="col-md-4 twenty" style="background-color:#7030a0;">
       <figcaption>生成完整角色動畫 - 2</figcaption>
       <img src="4.gif" width="100%"><br>
       <td> 使用提示詞:
-          "0" :"1girl, black hair, ponytail, opaque white cotton sundress, modest, morning beach, clear sky, soft morning light, ocean waves, walking",
-          "10" :"1girl, black hair, ponytail, opaque white cotton sundress, modest, morning beach, clear sky, soft morning light, ocean waves, walking",
-          "20" :"1girl, black hair, ponytail, opaque white cotton sundress, modest, morning beach, clear sky, soft morning light, ocean waves, walking",
-          "30" :"1girl, black hair, ponytail, opaque white cotton sundress, modest, sunny beach, noon, bright sunlight, clear blue sky, sparkling water",
-          "40" :"1girl, black hair, ponytail, opaque white cotton sundress, modest, sunny beach, noon, bright sunlight, clear blue sky, sparkling water",
-          "50" :"1girl, black hair, ponytail, opaque white cotton sundress, modest, sunny beach, noon, bright sunlight, clear blue sky, sparkling water",
-          "60" :"1girl, black hair, ponytail, opaque white cotton sundress, modest, sunset beach, golden hour, warm lighting, dramatic sky, ocean breeze",
-          "70" :"1girl, black hair, ponytail, opaque white cotton sundress, modest, sunset beach, golden hour, warm lighting, dramatic sky, ocean breeze",
-          "80" :"1girl, black hair, ponytail, opaque white cotton sundress, modest, sunset beach, golden hour, warm lighting, dramatic sky, ocean breeze",
-          "90" :"1girl, black hair, ponytail, opaque white cotton sundress, modest, night beach, starry sky, moonlight, dark ocean, glowing reflections",
-          "100" :"1girl, black hair, ponytail, opaque white cotton sundress, modest, night beach, starry sky, moonlight, dark ocean, glowing reflections",
-          "110" :"1girl, black hair, ponytail, opaque white cotton sundress, modest, night beach, starry sky, moonlight, dark ocean, glowing reflections"
-          <br><br>
-          使用負面提示詞:
-          (bad quality, worst quality:1.2), sheer, transparent, translucent, revealing, wet clothes
+          "0" :"1girl, black hair, messy bun, cream linen sundress, cozy, early morning beach, diffused light, soft mist over ocean waves, tranquil, walking barefoot",
+"10" :"1girl, black hair, messy bun, cream linen sundress, cozy, early morning beach, diffused light, soft mist over ocean waves, tranquil, walking barefoot",
+"20" :"1girl, black hair, messy bun, cream linen sundress, cozy, early morning beach, diffused light, soft mist over ocean waves, tranquil, walking barefoot",
+"30" :"1girl, black hair, messy bun, modest floral print sundress, casual, sunny beach, noon, bright sunlight, clear blue sky, sparkling water, straw hat",
+"40" :"1girl, black hair, messy bun, modest floral print sundress, casual, sunny beach, noon, bright sunlight, clear blue sky, sparkling water, straw hat",
+"50" :"1girl, black hair, messy bun, modest floral print sundress, casual, sunny beach, noon, bright sunlight, clear blue sky, sparkling water, straw hat",
+"60" :"1girl, black hair, messy bun, textured cardigan over tank top and flowy skirt, thoughtful, sunset beach, golden hour, warm saturated lighting, dramatic clouds, ocean breeze",
+"70" :"1girl, black hair, messy bun, textured cardigan over tank top and flowy skirt, thoughtful, sunset beach, golden hour, warm saturated lighting, dramatic clouds, ocean breeze",
+"80" :"1girl, black hair, messy bun, textured cardigan over tank top and flowy skirt, thoughtful, sunset beach, golden hour, warm saturated lighting, dramatic clouds, ocean breeze",
+"90" :"1girl, black hair, messy bun, hooded parka and scarf, solemn, night beach, starlight, soft firelight glow, deep blue moonlight, dark ocean, glowing reflections, sitting",
+"100" :"1girl, black hair, messy bun, hooded parka and scarf, solemn, night beach, starlight, soft firelight glow, deep blue moonlight, dark ocean, glowing reflections, sitting",
+"110" :"1girl, black hair, messy bun, hooded parka and scarf, solemn, night beach, starlight, soft firelight glow, deep blue moonlight, dark ocean, glowing reflections, sitting"
+
+Negative Prompt
+(bad quality, worst quality:1.2), sheer, transparent, translucent, revealing, wet clothes
       </td>
     </div>
     <div class="col-md-4 twenty" style="background-color:#7030a0;">
       <figcaption>生成完整角色動畫 - 3</figcaption>
       <img src="6.gif" width="100%"><br>
       <td> 使用提示詞:
-          "0" :"1boy, handsome, short hair, workwear jacket, cargo pants, morning beach, ocean waves, clear sky, walking",
-          "10" :"1boy, handsome, short hair, workwear jacket, cargo pants, morning beach, ocean waves, clear sky, walking",
-          "20" :"1boy, handsome, short hair, workwear jacket, cargo pants, morning beach, ocean waves, clear sky, walking",
-          30" :"1boy, handsome, short hair, workwear vest, white t-shirt, cargo shorts, sunny beach, ocean, blue sky, wearing sunglasses",
-          "40" :"1boy, handsome, short hair, workwear vest, white t-shirt, cargo shorts, sunny beach, ocean, blue sky, wearing sunglasses",
-          "50" :"1boy, handsome, short hair, workwear vest, white t-shirt, cargo shorts, sunny beach, ocean, blue sky, wearing sunglasses",
-          "60" :"1boy, handsome, short hair, unbuttoned workwear shirt, cargo pants, sunset beach, golden hour, wind, dramatic lighting",
-          "70" :"1boy, handsome, short hair, unbuttoned workwear shirt, cargo pants, sunset beach, golden hour, wind, dramatic lighting",
-          "80" :"1boy, handsome, short hair, unbuttoned workwear shirt, cargo pants, sunset beach, golden hour, wind, dramatic lighting",
-          "90" :"1boy, handsome, short hair, dark workwear jacket, cargo pants, night beach, starry sky, moonlight, ocean reflections",
-          "100" :"1boy, handsome, short hair, dark workwear jacket, cargo pants, night beach, starry sky, moonlight, ocean reflections",
-          "110" :"1boy, handsome, short hair, dark workwear jacket, cargo pants, night beach, starry sky, moonlight, ocean reflections"
+          "0" :"1boy, handsome, short hair, graphic t-shirt, casual open shirt, cargo shorts, bright morning beach, turquoise waves, clear blue sky, wide smile, energetic walking, sunny day",
+"10" :"1boy, handsome, short hair, graphic t-shirt, casual open shirt, cargo shorts, bright morning beach, turquoise waves, clear blue sky, wide smile, energetic walking, sunny day",
+"20" :"1boy, handsome, short hair, graphic t-shirt, casual open shirt, cargo shorts, bright morning beach, turquoise waves, clear blue sky, wide smile, energetic walking, sunny day",
+"30" :"1boy, handsome, short hair, bright tank top, white t-shirt layered underneath, athletic shorts, super sunny beach, ocean breeze, clear sky, wearing colorful sunglasses, smiling brightly, laughing",
+"40" :"1boy, handsome, short hair, bright tank top, white t-shirt layered underneath, athletic shorts, super sunny beach, ocean breeze, clear sky, wearing colorful sunglasses, smiling brightly, laughing",
+"50" :"1boy, handsome, short hair, bright tank top, white t-shirt layered underneath, athletic shorts, super sunny beach, ocean breeze, clear sky, wearing colorful sunglasses, smiling brightly, laughing",
+"60" :"1boy, handsome, short hair, patterned short-sleeve shirt (unbuttoned), denim shorts, warm golden sunset beach, dynamic wind, brilliant golden hour lighting, smiling at the sun",
+"70" :"1boy, handsome, short hair, patterned short-sleeve shirt (unbuttoned), denim shorts, warm golden sunset beach, dynamic wind, brilliant golden hour lighting, smiling at the sun",
+"80" :"1boy, handsome, short hair, patterned short-sleeve shirt (unbuttoned), denim shorts, warm golden sunset beach, dynamic wind, brilliant golden hour lighting, smiling at the sun",
+"90" :"1boy, handsome, short hair, comfortable hoodie, cargo shorts, cozy beach bonfire at night, warm crackling fire, starry sky, gentle moonlight reflections, holding a guitar, happy expression, friendly atmosphere",
+"100" :"1boy, handsome, short hair, comfortable hoodie, cargo shorts, cozy beach bonfire at night, warm crackling fire, starry sky, gentle moonlight reflections, holding a guitar, happy expression, friendly atmosphere",
+"110" :"1boy, handsome, short hair, comfortable hoodie, cargo shorts, cozy beach bonfire at night, warm crackling fire, starry sky, gentle moonlight reflections, holding a guitar, happy expression, friendly atmosphere"
       </td>
     </div>
   </div>
